@@ -19,10 +19,7 @@ public class CustomerListExample {
 
     // print array
     System.out.println("----- linked list -----");
-    printf(customerArray);
-  }
-
-  private static void printf(JSONArray customerArray) {
+    print();
   }
 
   // get array of customers
@@ -40,23 +37,32 @@ public class CustomerListExample {
 
   // copy customers array to the linked list
   public static void copyToList(JSONArray arr) {
-    for (int i = 0; i < arr.size(); i++) {
+    for (int i = 0; i < arr.size(); i++) 
+    {
       // fetch the json object
       JSONObject o = (JSONObject) arr.get(i);
 
       // parse the hash map
       Integer id = ((Long) o.get("id")).intValue();
+      System.out.println(id);
       String name = (String) o.get("name");
+      System.out.println(name);
       String email = (String) o.get("email");
-      /*
-       * write the code to create one customer and the customer
-       * to the customerList linked list
-       */
+      System.out.println(email);
+    
+    {
+      System.out.println(o+"");
+    }
     }
   }
 
   // print customer linked list
   public static void print() {
+    List<Customer> list;
+    LinkedList<String> customList = new LinkedList<>();
+    for (int i = 0; i < customerList.size(); i++) {
+      System.out.println(i +" = "+customerList.get(i));
+  }
     /*
      * write the code to print the linked list
      */
