@@ -5,8 +5,6 @@ import org.json.simple.*;
 
 public class CustomerListExample {
 
-  private static LinkedList<Customer> customerList = new LinkedList<Customer>();
-
   public static void main(String[] args) {
     String fileName =
       "/Users/natnaelebuy/Documents/GitHub/Githubnatnael/lab-week9/demo/src/main/java/com/example/customer_data.json";
@@ -58,11 +56,13 @@ public class CustomerListExample {
 
   // print customer linked list
   public static void print() {
-    List<Customer> list;
-    LinkedList<String> customList = new LinkedList<>();
-    for (int i = 0; i < customerList.size(); i++) {
-      System.out.println(i +" = "+customerList.get(i));
-  }
+    LinkedList<Customer> customers = new LinkedList<>();
+                new Customer("john","doe","john@domain.com");
+                new Customer("esther","anderson","john@domain.com");
+                new Customer("mary","public","mary@domain.com");
+        
+        
+    
     
   }
 }

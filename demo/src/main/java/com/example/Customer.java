@@ -6,8 +6,8 @@ public class Customer {
   private String name;
   private String email;
 
-  public Customer(Integer id, String name, String email) {
-    this.id = id;
+  public Customer(String string, String name, String email) {
+    this.id = string;
     this.name = name;
     this.email = email;
   }
