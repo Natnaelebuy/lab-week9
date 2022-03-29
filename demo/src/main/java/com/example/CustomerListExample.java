@@ -63,8 +63,6 @@ public class CustomerListExample {
     for (int i = 0; i < customerList.size(); i++) {
       System.out.println(i +" = "+customerList.get(i));
   }
-    /*
-     * write the code to print the linked list
-     */
+    
   }
 }
