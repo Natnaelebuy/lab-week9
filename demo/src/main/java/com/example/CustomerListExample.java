@@ -19,7 +19,10 @@ public class CustomerListExample {
 
     // print array
     System.out.println("----- linked list -----");
-    print();
+    printf(customerArray);
+  }
+
+  private static void printf(JSONArray customerArray) {
   }
 
   // get array of customers
