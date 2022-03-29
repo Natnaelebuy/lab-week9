@@ -9,7 +9,7 @@ public class CustomerListExample {
 
   public static void main(String[] args) {
     String fileName =
-      "C:/Users/jerom/Documents/GitHub/class-java/linked-list-lab/lab/src/main/java/com/example/customer_data.json";
+      "/Users/natnaelebuy/Documents/GitHub/Githubnatnael/lab-week9/demo/src/main/java/com/example/customer_data.json";
 
     // read customers names
     JSONArray customerArray = JSONFile.readArray(fileName);
